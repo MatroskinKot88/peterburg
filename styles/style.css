@@ -1,0 +1,681 @@
+@font-face {
+    font-family: 'BERNIER';
+    src: url(../fonts/BERNIERRegular-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BERNIERShade';
+    src: url(../fonts/BERNIERShade-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    margin: 0;
+    padding-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BERNIER', serif;
+    margin-bottom: 1rem;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Хедер */
+
+.navbar {
+    padding: 0.8rem 1.5rem;
+    z-index: 1030;
+    display: flex;
+}
+
+.navbar-brand {
+    font-family: 'BERNIER', serif;
+    font-size: 1.4rem;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.navbar-brand-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    color: #333 !important;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+.navbar-nav .btn {
+    border-radius: 30px;
+    font-weight: bold;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.navbar-nav .nav-link img {
+    transition: transform 0.2s;
+}
+
+.navbar-nav .nav-link img:hover {
+    transform: scale(1.1);
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+/*  Мобильное меню */
+.mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mobile-social .nav-link {
+    padding: 0.5rem;
+}
+
+.mobile-social .nav-link:hover {
+    transform: scale(1.1);
+}
+
+/*  Хиро секция */
+
+#hero {
+    background-image: url(../images/images/bg\ head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-title {
+    margin: auto;
+    width: 75rem;
+} 
+
+.hero-title-text strong {
+    font-family: 'BERNIER', sans-serif;
+    font-size: 6rem;
+    color: #ce6d40cb;
+    padding-bottom: 0;
+}
+
+.hero-title-text span {
+    font-family: 'BERNIER', sans-serif;
+    font-size: 5rem;
+    font-style: bold;
+    color: #cf6a3bee;
+}
+
+.hero-title-text2 {
+    margin-right: 10rem;
+    font-family: 'BERNIER', sans-serif;
+    font-size: 2.5rem;
+    color: #14254bc9;
+}
+
+.hero-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 22rem;
+}
+
+.hero-features li {
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.hero-features li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: rgb(248, 171, 27);
+}
+
+.hero-features li span {
+    color: #1e5da1;
+}
+
+#hero .btn {
+    background-image: linear-gradient(to right, rgb(235, 114, 34), #cf6a3bee);
+    border: none;
+    width: 25rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+#hero .btn:hover {
+    border-color: #cf6a3bee;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(235, 114, 34, 0.4);
+}
+
+.hero-image {
+    width: 50rem;
+}
+
+.info-item {
+    background-image: url(../images/images/d.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid rgb(248, 171, 27, 0.39);
+    width: 250px;
+    height: 138px;
+    margin-top: 90px;
+    text-align: center;
+    padding: 35px 35px 10px 35px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item strong {
+    color: #466e99;
+}
+
+/* Для кого курс */
+
+.section-title {
+    background-image: url(../images/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    border: 5px solid rgba(248, 171, 27, 0.39);
+    border-right: none;
+    font-family: 'PT Sans' sans-serif;
+    color: black;
+}
+
+.section-title span {
+    font-family: 'PT Sans' sans-serif;
+    color: #1e5da1;
+}
+
+.section-title-text {
+    font-family: 'BERNIER', serif;
+    font-size: 5rem;
+    color: #cf6a3bee;
+    padding: 30px;
+}
+
+.section-title-image {
+    border: 5px solid rgb(248, 171, 27, 0.39);
+    padding: 0;
+}
+
+#for-whom .section-title,
+#for-whom p {
+    text-align: center;
+}
+
+/* Материалы */
+
+#materials {
+    background-color: #f9f9f9;
+}
+
+.materials-title {
+    font-family: 'BERNIER', serif;
+    font-size: 5rem;
+    color: #cf6a3bee;
+}
+
+.materials-grid {
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid rgb(248, 171, 27, 0.39);
+}
+
+.materials-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+    max-width: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.materials-item:hover {
+    transform: translateY(-5px);
+}
+
+.materials-item:not([data-type="paints"]) {
+    cursor: default;
+}
+
+.material-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.paints-list {
+    margin-top: 2rem;
+}
+
+.list-group-item {
+    font-family: 'PT Sans', sans-serif;
+    padding: 0.6rem 1rem;
+}
+
+/* Выпадающий список красок */
+
+.paints-dropdown {
+    width: 450px; 
+    max-width: 90vw;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #1e5da1;
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+.paints-dropdown.show {
+    display: block !important;
+}
+
+.materials-item .btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    font-size: 0.6rem;
+} 
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #f8c471;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.paints-dropdown ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.paints-dropdown li {
+    margin-bottom: 0.6rem;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.4;
+}
+
+/* Тарифы */
+
+#tariffs {
+    background-image: url(../images/images/bg\ tarif.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#tariffs .btn {
+    background-image: linear-gradient(to right, rgb(235, 114, 34), #cf6a3bee);
+    border: none;
+    margin: 0 20px 30px 20px;
+}
+
+.tariffs-title {
+    font-family: 'BERNIER', serif;
+    font-size: 5rem;
+    color: #cf6a3bee;
+}
+
+.tariff-card-title {
+    background-color: #033f80c2;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tariff-card {
+    background-color: white;
+}
+
+.tariff-features {
+    font-family: 'PT Sans', sans-serif;
+    margin-left: 20px;
+}
+
+.tariff-features li span {
+    color: rgb(248, 171, 27);
+}
+
+.tariff-price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.old-price {
+    color: #033f80c2;
+    font-size: 1.5rem;
+}
+
+.price {
+    color: #033f80c2;
+    font-size: 2rem;
+}
+
+/* FAQ */
+
+#faq {
+    background-color: #f8f9fa;
+}
+
+.faq-title {
+    font-family: 'BERNIER', serif;
+    font-size: 5rem;
+    color: #cf6a3bee;
+}
+
+.faq-item {
+    border: 5px solid rgb(248, 171, 27, 0.39);
+}
+
+.faq-question {
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #033f80c2;
+}
+
+.faq-question.active {
+    color: #cf6a3bee;
+}
+
+.faq-question:hover {
+    background-color: #e9ecef;
+}
+
+.faq-answer {
+    border-top: 1px solid #eee;
+    display: none;
+}
+
+/* Иконка стрелки */
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.support {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Адаптивность */
+
+@media (max-width: 1200px) {
+    .hero-title {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .hero-title-text strong {
+        font-size: 4.5rem;
+    }
+    
+    .hero-title-text span {
+        font-size: 4rem;
+    }
+    
+    .hero-title-text2 {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+    
+    .hero-image {
+        width: 40rem;
+    }
+    
+    .info-item {
+        width: 200px;
+        height: 120px;
+        font-size: 16px;
+        padding: 25px 20px 10px 20px;
+    }
+    
+    .section-title-text,
+    .materials-title,
+    .tariffs-title,
+    .faq-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    
+    .navbar-brand-logo {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    .hero-title-text strong {
+        font-size: 3.5rem;
+    }
+    
+    .hero-title-text span {
+        font-size: 3rem;
+    }
+    
+    .hero-title-text2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-features {
+        width: 100%;
+    }
+    
+    .hero-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    
+    #hero .btn {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1rem;
+        height: 2.8rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .info-item {
+        display: none;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .section-title-text,
+    .materials-title,
+    .tariffs-title,
+    .faq-title {
+        font-size: 3rem;
+        padding: 20px;
+    }
+    
+    #for-whom .col-lg-6:last-child {
+        order: -1;
+    }
+    
+    .materials-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .materials-item {
+        max-width: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .tariff-card-title {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+    
+    .tariff-features {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+    
+    .old-price {
+        font-size: 1.2rem;
+    }
+    
+    .price {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title-text strong {
+        font-size: 3rem;
+    }
+    
+    .hero-title-text span {
+        font-size: 2.5rem;
+    }
+    
+    .hero-title-text2 {
+        font-size: 1.5rem;
+    }
+    
+    .info-item {
+        width: 150px;
+        height: 100px;
+        font-size: 12px;
+        padding: 15px 10px 10px 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .section-title-text,
+    .materials-title,
+    .tariffs-title,
+    .faq-title {
+        font-size: 2.5rem;
+    }
+    
+    .paints-dropdown {
+        width: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .tariff-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title-text strong {
+        font-size: 2.5rem;
+    }
+    
+    .hero-title-text span {
+        font-size: 2rem;
+    }
+    
+    .hero-title-text2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-features li {
+        font-size: 0.9rem;
+    }
+    
+    .info-item {
+        display: none;
+    }
+    
+    .section-title-text,
+    .materials-title,
+    .tariffs-title,
+    .faq-title {
+        font-size: 2rem;
+    }
+    
+    .materials-item {
+        max-width: 80px;
+    }
+    
+    .tariff-card-title {
+        font-size: 1rem;
+    }
+    
+    .tariff-features {
+        font-size: 0.8rem;
+    }
+    
+    .old-price {
+        font-size: 1rem;
+    }
+    
+    .price {
+        font-size: 1.4rem;
+    }
+}
