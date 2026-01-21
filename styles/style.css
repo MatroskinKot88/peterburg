@@ -298,16 +298,13 @@ section {
 /* Выпадающий список красок */
 
 .paints-dropdown {
-    width: 450px; 
+    width: 450px;
     max-width: 90vw;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     position: absolute;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    border-color: #1e5da1;
     text-align: left;
     font-size: 0.7rem;
+    margin-left: 5.5rem;
 }
 
 .paints-dropdown.show {
@@ -370,11 +367,20 @@ section {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-radius: 10px 10px 0 0;
 }
 
 .tariff-card {
     background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
+
+.tariff-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 
 .tariff-features {
     font-family: 'PT Sans', sans-serif;
@@ -648,6 +654,10 @@ section {
         font-size: 0.9rem;
     }
     
+    #hero .btn {
+        font-size: 0.8rem;
+    }
+ 
     .info-item {
         display: none;
     }
